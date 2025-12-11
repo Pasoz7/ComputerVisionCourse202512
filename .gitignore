@@ -42,13 +42,15 @@ Thumbs.db
 */data/
 **/data/
 
-# 自訂資料集
-**/dataset/
-dataset/
+# 自訂資料集 - 忽略圖片但保留資料夾結構
+**/dataset/**/*.jpg
+**/dataset/**/*.jpeg
+**/dataset/**/*.png
+**/dataset/**/*.bmp
+**/dataset/**/*.tif
+**/dataset/**/*.tiff
 
 # ============== 模型檔案 (避免佔用 GitHub 空間) ==============
-**/models/
-models/
 *.pth
 *.pt
 *.onnx
