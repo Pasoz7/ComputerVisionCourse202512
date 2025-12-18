@@ -23,7 +23,7 @@ def main():
         static_image_mode=False,      # False = 影片模式 (更快)
         max_num_hands=2,              # 最多偵測 2 隻手
         min_detection_confidence=0.5, # 偵測信心閾值
-        min_tracking_confidence=0.5   # 追蹤信心閾值
+        min_tracking_confidence=0.5   # 追蹤信心閾值uhuh
     )
 
     # 開啟攝影機
@@ -47,7 +47,7 @@ def main():
         # 執行手部偵測
         results = hands.process(rgb_frame)
 
-        # 繪製結果
+        # 繪製結果.s
         if results.multi_hand_landmarks:
             for hand_landmarks in results.multi_hand_landmarks:
                 # 繪製手部關鍵點與連接線
